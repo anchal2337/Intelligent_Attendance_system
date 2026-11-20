@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+@import 'tailwindcss';
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fdf8f4; min-height: 100vh; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d4c8f0; border-radius: 4px; }
+
+@keyframes scan { 0%{transform:translateY(-100%);opacity:.8} 100%{transform:translateY(500%);opacity:0} }
+@keyframes fadeIn { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:none} }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+@keyframes pop { 0%{transform:scale(.9);opacity:0} 60%{transform:scale(1.05)} 100%{transform:scale(1);opacity:1} }
+
+.scan-line { animation: scan 1.8s linear infinite; }
+.fade-in { animation: fadeIn .25s ease forwards; }
+.live-dot { animation: pulse 1.5s ease-in-out infinite; }
+.pop-in { animation: pop .2s ease forwards; }
+
+/* hover card expansion */
+.hcard { transition: box-shadow .18s, transform .18s; }
+.hcard:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(124,107,158,.13); }

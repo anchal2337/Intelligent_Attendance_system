@@ -1,0 +1,33 @@
+from app.models.entities import (
+    Department,
+    User,
+    Teacher,
+    Student,
+    Subject,
+    TeacherSubject,
+    Lecture,
+    LectureSessionInterval,
+    GateAttendance,
+    LectureAttendance,
+    AttendanceAudit,
+    StudentRemark,
+    CalendarEvent,
+    SystemSettings,
+)
+
+__all__ = [
+    "Department",
+    "User",
+    "Teacher",
+    "Student",
+    "Subject",
+    "TeacherSubject",
+    "Lecture",
+    "LectureSessionInterval",
+    "GateAttendance",
+    "LectureAttendance",
+    "AttendanceAudit",
+    "StudentRemark",
+    "CalendarEvent",
+    "SystemSettings",
+]
